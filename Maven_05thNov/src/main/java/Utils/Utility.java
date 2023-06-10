@@ -17,25 +17,7 @@ public class Utility {
 		File dest = new File("test-output\\FailTestScreesnhots"+ + ".jpeg");
 	}
 	
-	// Test Class input -> SheetName, Row No, Cell No. 
-	public static String getExcelData(String sheet, int row, int cell) {
-		
-		String path = "src/main/resources/data/ProjectTestData.xlsx";
-		
-		try {
-			String data = getStringCellValue();
-		}
-		catch(exceptionName e) {
-			double value = getNumericCellValue();
-			// convert double to string
-			String data = value to string data;
-		}	
-		
-		catch(exceptionName e) {
-			double value = getNumericCellValue();
-			// convert double to string
-			String data = value to string data;
-		}
+	
 		
 		
 	}
