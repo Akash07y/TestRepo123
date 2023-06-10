@@ -31,7 +31,11 @@ public class Utility {
 			String data = value to string data;
 		}	
 		
-		
+		catch(exceptionName e) {
+			double value = getNumericCellValue();
+			// convert double to string
+			String data = value to string data;
+		}
 		
 		
 	}
