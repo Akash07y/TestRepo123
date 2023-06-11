@@ -38,7 +38,9 @@ public class VerifyForgotPasswordPage extends Base{
 	
 	@Parameters ("browser")
 	@BeforeTest
-	public void openBrowddfbfcbser(String browserName)
+
+	public void open1234Browser(String browserName) 
+
 	public void openBrowser(String browserName) {
 		
 		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
