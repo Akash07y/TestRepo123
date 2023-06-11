@@ -14,9 +14,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SignUpPopUp {
-
-		@FindBy (xpath = "//table//div") 
-		private WebElement firstName ;
 		
 		@FindBy (xpath = "(//input[@name='email'])[2]") 
 		private WebElement lastName ;
@@ -54,6 +51,18 @@ public class SignUpPopUp {
 		}
 	
 		public void clickOnCustom() {
+			//Actions action = new Actions(driver);
+			
+			//WebDriverWait wait = new WebDriverWait(driver, 20) ;  // 20Sec
+			wait = new WebDriverWait(driver, 20) ;
+			wait.until(ExpectedConditions.visibilityOf(custom));
+			javascriptExecutor.executeScript("arguments[0].scrillIntoView(true);", custom);
+			javascriptExecutor.executeScript("window.scrollBy(0,-50)");
+			
+			action.moveToElement(custom).click().build().perform();
+		}
+	
+		public void clickOnCustom123() {
 			//Actions action = new Actions(driver);
 			
 			//WebDriverWait wait = new WebDriverWait(driver, 20) ;  // 20Sec
