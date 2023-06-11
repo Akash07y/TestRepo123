@@ -13,6 +13,8 @@ public class Base {
 		return driver ;
 	}
 	
+	{
+	
 	public static WebDriver openFirefoxBrowser() {
 		System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\browserFile\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver() ;
@@ -20,7 +22,7 @@ public class Base {
 		WebDriver driver = new FirefoxDriver() ;
 		WebDriver driver = new FirefoxDriver() ;
 		return driver ;
-	}
+	
 	
 	public static WebDriver openOperaBrowser() {
 		System.setProperty("webdriver.opera.driver", "src\\test\\resources\\browserFile\\operadriver.exe");
@@ -34,6 +36,8 @@ public class Base {
 		System.setProperty("webdriver.opera.driver", "src\\test\\resources\\browserFile\\operadriver.exe");
 		WebDriver driver = new OperaDriver() ;
 		return driver ;
+	}
+		
 	}
 
 }
