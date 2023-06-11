@@ -31,10 +31,12 @@ public class Base {
 		WebDriver driver = new OperaDriver() ;
 		return driver ;
 	}
-	
+	jhvhkjh.kjl
+}
+	{
 	public static WebDriver openOperaBrowser() {
 		System.setProperty("webdriver.opera.driver", "src\\test\\resources\\browserFile\\operadriver.exe");
-		WebDriver driver = new OperaDriver() ;
+		WebDriver driver = new OperaDriver() hvjhmb
 		return driver ;
 	}
 		

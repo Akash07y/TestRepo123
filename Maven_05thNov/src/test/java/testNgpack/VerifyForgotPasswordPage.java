@@ -38,6 +38,7 @@ public class VerifyForgotPasswordPage extends Base{
 	
 	@Parameters ("browser")
 	@BeforeTest
+	public void openBrowser123(String browserName)
 	public void openBrowser(String browserName) {
 		
 		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
@@ -50,10 +51,18 @@ public class VerifyForgotPasswordPage extends Base{
 		{
 			driver = openChromeBrowser();
 		}
+		if(browserName.equals("Chrome"))
+		{
+			driver = openChromeBrowser();
+		}
 		
 		if(browserName.equals("Firefox"))
 		{
-			driver = openFirefoxBrowser();
+			driver = opeif(browserName.equals("Chrome"))
+		{
+			driver = openChromeBrowser();
+		}
+		nFirefoxBrowser();
 		}
 		
 		if(browserName.equals("Opera"))
