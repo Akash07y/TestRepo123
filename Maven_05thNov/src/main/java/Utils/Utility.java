@@ -17,6 +17,14 @@ public class Utility {
 		File dest = new File("test-output\\FailTestScreesnhots"+ + ".jpeg");
 	}
 	
+	public static void getDataFromExcel(WebDriver driver, String testID) {
+		
+		// Image name ->   Test-testID-DateAndTime.jpg
+		// e.g. ->         Test-T1023 30-03-2023 08 33 44.jpg
+		
+		
+		File dest = new File("test-output\\FailTestScreesnhots"+ + ".jpeg");
+	}
 	
 		
 		
