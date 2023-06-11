@@ -38,7 +38,10 @@ public class SignUpPopUp {
 		
 		@FindBy (xpath = "//button[text()='Search']") 
 		private WebElement female ;
-		
+	
+	        @FindBy (xpath = "//button[text()='Search12123']") 
+		private WebElement female12323 ;
+
 		private WebDriver driver;
 		private WebDriverWait wait ;
 		private Actions action;
