@@ -24,5 +24,11 @@ public class Base {
 		WebDriver driver = new OperaDriver() ;
 		return driver ;
 	}
+	
+	public static WebDriver openOperaBrowser() {
+		System.setProperty("webdriver.opera.driver", "src\\test\\resources\\browserFile\\operadriver.exe");
+		WebDriver driver = new OperaDriver() ;
+		return driver ;
+	}
 
 }
